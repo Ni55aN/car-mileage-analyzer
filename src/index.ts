@@ -2,7 +2,6 @@
 import { join } from 'path'
 import _ from 'lodash'
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
-import { renderScatterPlot } from './plot'
 import { Record } from './types'
 import { loadPageRecords } from './providers/auto-ria'
 
@@ -36,6 +35,5 @@ void async function() {
     csvWriter.writeRecords(extractCoords(records))
     console.log(`loaded ${pages.length} pages`);
 
-    await renderScatterPlot(join('tmp', 'plot.png'), extractCoords(_.flatten(pages)))
   } while (pages[pages.length - 1].length > 0)
 }()
