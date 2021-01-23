@@ -17,9 +17,14 @@
     "cheerio": "^1.0.0-rc.3",
     "csv-writer": "^1.6.0",
     "fs-extra": "^9.0.1",
+    "iconv-lite": "^0.6.2",
     "lodash": "^4.17.20",
     "stats-analysis": "^2.0.0",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.2"
+    "typescript": "^4.1.2",
+    "user-agents": "^1.0.559"
+  },
+  "devDependencies": {
+    "@types/user-agents": "^1.0.0"
   }
 }
